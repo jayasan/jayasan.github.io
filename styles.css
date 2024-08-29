@@ -4,14 +4,19 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f4;
+    background-image: url('../images/background.jpg'); /* Local background image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-blur: 5px; /* Adds a subtle blur to the background image */
 }
 
 header {
-    background-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent blue */
     color: #fff;
     padding: 1rem 2rem;
     text-align: center;
+    border-bottom: 4px solid #0056b3; /* Darker blue bottom border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 nav {
@@ -25,7 +30,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 1rem;
 }
 
@@ -33,26 +38,38 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Gold color on hover */
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5); /* Glow effect on hover */
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
 section {
     margin: 2rem 0;
-    padding: 1rem;
+    padding: 1.5rem;
     background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
 footer {
-    background-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent blue */
     color: #fff;
     padding: 1rem;
     text-align: center;
+    border-top: 4px solid #0056b3; /* Darker blue top border */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Responsive Styles */
